@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple CRUD App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="min-h-screen flex items-center justify-center bg-black/30 backdrop-blur-sm">
+
+  <div class="w-full max-w-4xl p-6 bg-gray-900/60 rounded-2xl shadow-xl backdrop-blur-md border border-gray-700">
+    <h1 class="text-3xl font-bold text-white mb-6 text-center">Simple User Form</h1>
+
+    <!-- Form -->
+    <form id="userForm" class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+      <input
+        type="text"
+        id="firstName"
+        placeholder="Enter Name"
+        class="p-2 rounded bg-gray-800 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        required
+      />
+      <input
+        type="text"
+        id="lastName"
+        placeholder="Enter Last Name"
+        class="p-2 rounded bg-gray-800 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        required
+      />
+      <input
+        type="text"
+        id="idNumber"
+        placeholder="Enter ID Number"
+        class="p-2 rounded bg-gray-800 text-white placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        required
+      />
+      <button
+        type="submit"
+        class="bg-blue-600 hover:bg-blue-700 text-white rounded p-2 transition shadow-md"
+      >
+        Add
+      </button>
+    </form>
+
+    <!-- Table -->
+    <table class="w-full text-white text-left backdrop-blur-md">
+      <thead>
+        <tr class="text-gray-300">
+          <th class="pb-2">#</th>
+          <th class="pb-2">Name</th>
+          <th class="pb-2">Last Name</th>
+          <th class="pb-2">ID Number</th>
+          <th class="pb-2">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userTable" class="divide-y divide-gray-700"></tbody>
+    </table>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

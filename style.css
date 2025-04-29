@@ -1,0 +1,12 @@
+body::before {
+    content: "";
+    background: url('https://aics.edu.ph/wp-content/uploads/2018/11/aicsnewbldg.jpg') no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(12px);
+    z-index: -1;
+  }
+  
