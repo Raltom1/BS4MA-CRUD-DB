@@ -16,3 +16,10 @@ Access the app locally at:
 ---
 
 📌 **For local development/testing only.**
+
+
+
+
+**How to use?.**
+![image](https://github.com/user-attachments/assets/43a86a50-2b38-4550-aa84-c2208a24cac6)
+
