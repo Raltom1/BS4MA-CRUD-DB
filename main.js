@@ -31,7 +31,7 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
   
   // Function to fetch and display users
   function fetchUsers() {
-    fetch('http://localhost:3000/users')
+    fetch('https://bs4ma-crud.netlify.app/')
       .then(response => response.json())
       .then(data => {
         const userTable = document.getElementById('userTable');
